@@ -1,0 +1,94 @@
+html,
+body {
+	color: black
+	height: 100%;
+}
+
+.relative {
+	position: relative;
+	background-color: pink;
+	padding: 15px;
+	top: 30px;
+	font-weight: 400;
+
+}
+
+.absolute {
+	position: absolute;
+	top: 50%; /*то, насколько заезжает на up*/
+	left: 50%;
+	border: 2px solid red; /*dashed пунктирный*/
+	padding: 80px;
+	background-color: yellow;
+	transform: translate(-50%, -50%);
+	z-index: 3;
+}
+
+.up {
+	z-index: 1; /*обязателбно должно быть positionrelative*/
+	font-family: 'Beer money';
+	background: radial-gradient(#38bac7, #324a56);
+}
+
+.purple {
+	background-color: purple;
+	height: 100px;
+}
+
+.main-menu {
+	list-style: none;
+	display: flex; /*поэтому они в одну строчку, но доаточно их просто строчными делать.Но если хочу, чтобы разъезжались - то так)*/
+	flex-direction: row-reverse; /*наоборот*/
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+.main-menu li {
+	padding: 15px; /*отступы каждому элементу*/
+}
+
+aside {
+	background-color: rgb(0,0,0);
+	/*background-image: url(); фон картинка*/
+	padding: 30px;
+	height: 100%;
+	position: fixed;
+	right: 0;
+	z-index: 2;
+	top: 0;
+	color: white;
+}	
+}
+/*position fixed всегда относительно экрана*/
+aside-menu {
+	height: 100%;
+}
+
+.wrapper {
+	background: linear-gradient(45deg, #eeeeee, #111111);
+}	/*height: 100%;*/
+
+.avatar {
+	background-image: url(ii.jpg);
+	background-size: cover;
+	background-position: center;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	transition: transform 2s;
+}
+
+.avatar:hover {
+	transform: scale(2) rotate(359deg);
+
+}
+
+
+/*video {
+	position: absolute;
+	width: 100%
+	height100%;
+}
